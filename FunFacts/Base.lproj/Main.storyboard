@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote goes right here " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATe-Xq-14M">
+                                <rect key="frame" x="30" y="207" width="220" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="92d-qc-WcZ"/>
+                                    <constraint firstAttribute="width" constant="220" id="dQZ-K9-Tqs"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="rh5-19-EZd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know that  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaY-ho-qex">
+                                <rect key="frame" x="30" y="52" width="149" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5LG-mR-SxI"/>
+                                    <constraint firstAttribute="width" constant="149" id="OHz-ht-waU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.51000000000000001" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNm-un-cRZ">
+                                <rect key="frame" x="70" y="499" width="180" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="RHm-4Z-24i"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="WOk-Bv-NLR"/>
+                                    <constraint firstAttribute="width" constant="180" id="YcU-Zt-rmP"/>
+                                    <constraint firstAttribute="height" constant="40" id="aZw-dF-H1u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <color key="tintColor" red="0.0" green="0.79215693473815918" blue="0.85098046064376831" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Show Quote"/>
+                                <connections>
+                                    <action selector="showFunFact" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LYI-gR-mcF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.81552235401459849" blue="0.86869462723248825" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ATe-Xq-14M" firstAttribute="top" secondItem="UaY-ho-qex" secondAttribute="bottom" constant="134" id="4x3-Vm-BTQ"/>
+                            <constraint firstItem="UaY-ho-qex" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="32" id="Qxv-ol-NRw"/>
+                            <constraint firstItem="ATe-Xq-14M" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="187" id="UVX-GV-gtB"/>
+                            <constraint firstItem="UaY-ho-qex" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="14" id="VbG-2n-QTE"/>
+                            <constraint firstItem="fNm-un-cRZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="479" id="XKt-Va-SSR"/>
+                            <constraint firstItem="ATe-Xq-14M" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="14" id="ht8-dc-qJQ"/>
+                            <constraint firstItem="ATe-Xq-14M" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="14" id="iqN-cg-tFg"/>
+                            <constraint firstItem="fNm-un-cRZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="54" id="lvT-f0-33c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="funFactButton" destination="fNm-un-cRZ" id="L3U-xJ-gVS"/>
+                        <outlet property="funFactLabel" destination="ATe-Xq-14M" id="Boc-3N-1eL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7" y="140"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
